@@ -10,10 +10,30 @@
 // @grant        GM_download
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_deleteValue
+// @grant        GM_registerMenuCommand
+// @grant        GM_unregisterMenuCommand
+// @grant        GM_addValueChangeListener
+// @require https://github.com/PRO-2684/GM_config/releases/download/v1.2.1/config.min.js#md5=525526b8f0b6b8606cedf08c651163c2
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @require      https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/shared.js
 // @resource     FAVNSAVE_CSS https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/favnsave.css
 // ==/UserScript==
+
+const settings_config = {
+    reverse_order: {
+        name: "Reverse Browse Order",
+        type: "bool",
+    },
+    hide_labels: {
+        name: "Hide button labels",
+        type: "bool",
+    },
+};
+const settings = new GM_config(settings_config);
+
 var $ = window.jQuery;
 
 const favnsave_css = GM_getResourceText("FAVNSAVE_CSS");
@@ -95,6 +115,10 @@ $("div.actions").on('click', '#favnsave_submissionsPageButton', function() {
 // Gather the list of submissions
 $("figcaption").each(function(index, figCaptionElement) {
     submissionElements.push(figCaptionElement);
+    if (settings.get("reverse_order"))
+    {
+        submissionElements.reverse();
+    }
 });
 interactiveSubmissionCount = submissionElements.length;
 
@@ -111,10 +135,10 @@ let squareIconUrl = "https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/h
 let checkSquareIconUrl = "https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/icons/check-square.svg";
 
 // Labels for the buttons (if enabled);
-let interactiveFavButtonLabel = "Fave & Save";
-let interactiveSkipButtonLabel = "Continue";
-let interactiveCheckButtonLabel = "Check And Continue";
-let interactiveCloseButtonLabel = "Exit";
+let interactiveFavButtonLabel = settings.get("hide_labels") ? "Fave & Save" : "";
+let interactiveSkipButtonLabel = settings.get("hide_labels") ? "Continue" : "";
+let interactiveCheckButtonLabel = settings.get("hide_labels") ? "Check And Continue" : "";
+let interactiveCloseButtonLabel = settings.get("hide_labels") ? "Exit" : "";
 
 // Whether or not to show the 'advance' icon on the 'Fav & Save' button.
 let interactiveShowAutoCheckButton = checkSquareIconUrl;
