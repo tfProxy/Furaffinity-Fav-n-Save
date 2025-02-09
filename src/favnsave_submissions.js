@@ -8,10 +8,16 @@
 // @match        *://*.furaffinity.net/msg/submissions/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=furaffinity.net
 // @grant        GM_download
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @require      https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/shared.js
+// @resource     FAVNSAVE_CSS https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/favnsave.css
 // ==/UserScript==
 var $ = window.jQuery;
+
+const favnsave_css = GM_getResourceText("FAVNSAVE_CSS");
+GM_addStyle(favnsave_css);
 
 function finishBatchOperation(totalItemsProcessed)
 {
