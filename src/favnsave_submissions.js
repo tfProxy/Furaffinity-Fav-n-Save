@@ -134,10 +134,10 @@ let squareIconUrl = "https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/h
 let checkSquareIconUrl = "https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/icons/check-square.svg";
 
 // Labels for the buttons (if enabled);
-let interactiveFavButtonLabel = settings.get("hide_labels") ? "Fave & Save" : "";
-let interactiveSkipButtonLabel = settings.get("hide_labels") ? "Continue" : "";
-let interactiveCheckButtonLabel = settings.get("hide_labels") ? "Check And Continue" : "";
-let interactiveCloseButtonLabel = settings.get("hide_labels") ? "Exit" : "";
+let interactiveFavButtonLabel = settings.get("hide_labels") ? "" : "Fave & Save";
+let interactiveSkipButtonLabel = settings.get("hide_labels") ? "" : "Continue";
+let interactiveCheckButtonLabel = settings.get("hide_labels") ? "" : "Check And Continue";
+let interactiveCloseButtonLabel = settings.get("hide_labels") ? "" : "Exit";
 
 // Whether or not to show the 'advance' icon on the 'Fav & Save' button.
 let interactiveShowAutoCheckButton = checkSquareIconUrl;
