@@ -7,5 +7,5 @@ Tampermonkey scripts to add a submission browser to Furaffinity.net, as well as 
 2. Go to the Tampermonkey extension dawshboard
 3. Go to the `Utilities` tab in the Tampermonkey dashboard
 4. Scroll to the `Import from URL` and install the following scripts:
-	* ... TODO
+	* `https://github.com/tfProxy/Fav-n-Save`
 	* ... TODO
