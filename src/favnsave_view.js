@@ -4,6 +4,7 @@
 // @version      2025-02-09
 // @description  Adds a 'Fav. & Save' button to a submission's page to favorite and download the file in a single click
 // @author       tfProxy
+// @source       https://github.com/tfProxy/Fav-n-Save
 // @match        *://*.furaffinity.net/view/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=furaffinity.net
 // @grant        GM_download
