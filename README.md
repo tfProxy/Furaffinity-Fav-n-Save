@@ -24,3 +24,11 @@ On your `Submissions` page, now there will be an option in the toolbar at the to
 
 An example of using this to browse through your pending submissions:
 ![Running an Interactive Check](https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/docs/images/Favnsave_submission_browser.gif)
+
+# Settings
+
+You can change some settings for the scripts from the Tampermonkey window when the script is active on a page.
+
+Available settings at the time of writing are:
+* `Reverse Browse Order` - Instead of browsing images on this page from newest -> oldest, will browse from oldest -> newest. Useful if you are viewing sequences of images that were uploaded in order.
+* `Hide Button Labels`  - Removes the labels from the buttons when the full-screen overlay is present.
