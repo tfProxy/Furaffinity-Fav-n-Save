@@ -16,7 +16,7 @@
 // @grant        GM_registerMenuCommand
 // @grant        GM_unregisterMenuCommand
 // @grant        GM_addValueChangeListener
-// @require https://github.com/PRO-2684/GM_config/releases/download/v1.2.1/config.min.js#md5=525526b8f0b6b8606cedf08c651163c2
+// @require      https://github.com/PRO-2684/GM_config/releases/download/v1.2.1/config.min.js#md5=525526b8f0b6b8606cedf08c651163c2
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @require      https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/shared.js
 // @resource     FAVNSAVE_CSS https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/favnsave.css
@@ -67,13 +67,12 @@ function startBatchOperation()
 				var downloadUrlAndFavElement = getDownloadUrlAndFavElement($(data));
 				var downloadUrl = downloadUrlAndFavElement[0];
 				var favElement = downloadUrlAndFavElement[1];
-                var fileName = downloadUrl.split('/').pop()
 
 				// Download the image
 				GM_download({
-                    url: makeCannonicalUrl(downloadUrl),
-                    name: downloadUrl.split('/').pop(),
-                });
+                    			url: makeCannonicalUrl(downloadUrl),
+                			name: downloadUrl.split('/').pop(),
+				});
 
 				// Follow the URL to favorite the item
 				var favUrl = favElement.attr('href');
