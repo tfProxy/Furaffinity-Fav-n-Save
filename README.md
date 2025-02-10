@@ -1,4 +1,4 @@
-# Fav-n-Save
+# Furaffinity-Fav-n-Save
 Tampermonkey scripts to add a submission browser to Furaffinity.net, as well as buttons to automatically download &amp; favorite a submission in one click
 
 # Installation
@@ -7,9 +7,9 @@ Tampermonkey scripts to add a submission browser to Furaffinity.net, as well as 
 2. Go to the Tampermonkey extension dawshboard
 3. Go to the `Utilities` tab in the Tampermonkey dashboard
 4. Scroll to the `Import from URL` and install the following scripts:
-	* `https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/favnsave_view.js`
+	* `https://raw.githubusercontent.com/tfProxy/Furaffinity-Fav-n-Save/refs/heads/main/src/favnsave_view.js`
 		* This adds functionality to the individual submission view page (when looking at a specific image)
-	* `https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/src/favnsave_submissions.js`
+	* `https://raw.githubusercontent.com/tfProxy/Furaffinity-Fav-n-Save/refs/heads/main/src/favnsave_submissions.js`
  		* * This adds the submission browser to the main 'Submissions' page
 
 # Usage
