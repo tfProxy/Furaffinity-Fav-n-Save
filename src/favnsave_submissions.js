@@ -5,7 +5,7 @@
 // @description  Adds an interactive submission browser and Fav. & Save buttons to the submissions page.
 // @author       tfProxy
 // @source       https://github.com/tfProxy/Fav-n-Save
-// @match        *://*.furaffinity.net/msg/submissions/
+// @match        *://*.furaffinity.net/msg/submissions/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=furaffinity.net
 // @grant        GM_download
 // @grant        GM_getResourceText
@@ -114,11 +114,11 @@ $("div.actions").on('click', '#favnsave_submissionsPageButton', function() {
 // Gather the list of submissions
 $("figcaption").each(function(index, figCaptionElement) {
     submissionElements.push(figCaptionElement);
-    if (settings.get("reverse_order"))
-    {
-        submissionElements.reverse();
-    }
 });
+if (settings.get("reverse_order"))
+{
+	submissionElements.reverse();
+}
 interactiveSubmissionCount = submissionElements.length;
 
 // Insert the button we can click to do interactive mode.
