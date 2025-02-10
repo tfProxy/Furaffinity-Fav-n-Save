@@ -23,7 +23,7 @@ On your `Submissions` page, now there will be an option in the toolbar at the to
 * `Exit` - Closes the overlay and returns you to your submissions list without taking any other actions.
 
 An example of using this to browse through your pending submissions:
-![Running an Interactive Check](https://raw.githubusercontent.com/tfProxy/Fav-n-Save/refs/heads/main/docs/images/Favnsave_submission_browser.gif)
+![Running an Interactive Check](https://raw.githubusercontent.com/tfProxy/Furaffinity-Fav-n-Save/refs/heads/main/docs/images/Favnsave_submission_browser.gif)
 
 # Settings
 
