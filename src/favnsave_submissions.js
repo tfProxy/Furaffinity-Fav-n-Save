@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Fav'n'save - Submissions Page
 // @namespace    http://tampermonkey.net/
-// @version      2025-02-09
+// @version      1.0.0
 // @description  Adds an interactive submission browser and Fav. & Save buttons to the submissions page.
 // @author       tfProxy
-// @source       https://github.com/tfProxy/Fav-n-Save
+// @website      https://github.com/tfProxy/Fav-n-Save
 // @match        *://*.furaffinity.net/msg/submissions/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=furaffinity.net
 // @grant        GM_download
