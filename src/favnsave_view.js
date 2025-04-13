@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fav'n'save - View Page
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Adds a 'Fav. & Save' button to a submission's page to favorite and download the file in a single click
 // @author       tfProxy
 // @source       https://github.com/tfProxy/Fav-n-Save
