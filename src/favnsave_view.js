@@ -21,7 +21,7 @@ var favElement = downloadUrlAndFavElement[1];
 
 // Insert the button to do a Fav'n'Save
 // We insert before the existing favorites button so that if there is a '<< Newer' button we are on the correct side.
-var favNSaveElement = $("<a/>").text("+Fav. & Save").attr("id", "favnsave_viewPageButton");
+var favNSaveElement = $("<a/>").text("+Fav. & Save").attr("id", "favnsave_viewPageButton").attr("href", "#");
 favNSaveElement.insertBefore(favElement.parent());
 $("<span />").text(" | ").insertBefore(favElement.parent());
 
